@@ -1,3 +1,5 @@
 
 /gimlet-core/.gradle
 /gimlet-core/build
+/gimlet/build
+/gimlet/.gradle
