@@ -33,7 +33,16 @@ References & Inspiration
 Examples
 ------------------------
 
-TBD
+### 1. Basic Script
+```groovy
+@Grab('com.gimlet:gimlet:0.1')
+@GimletScript
+import gimlet.*
+
+get('/') { 
+	'Hello World'
+}
+```
 
 
 TODO
