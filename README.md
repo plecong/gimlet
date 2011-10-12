@@ -34,11 +34,24 @@ Examples
 ------------------------
 
 ### 1. Basic Script
+
+This script should run (given that Gimlet is in an appropriate Maven repo) without any need to download anything.
+
 ```groovy
 @Grab('com.gimlet:gimlet:0.1')
 @GimletScript
 import gimlet.*
 
+get('/') { 
+	'Hello World'
+}
+```
+
+### 2. Embedded in a WAR
+
+Using a project template that contains the correct `web.xml` the basic script example can be reduced to:
+
+```groovy
 get('/') { 
 	'Hello World'
 }
