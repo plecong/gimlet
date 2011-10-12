@@ -16,7 +16,7 @@ tl;dr - Goals:
 --------------
 
 - Should look like a DSL and leverage Groovy 1.8 features to that effect (e.g. no annotations for routing)
-- Must be runnable from a simple Groovy script with a [Grab](http://groovy.codehaus.org/Grapes+and+grab()) annotation (see examples below)
+- Must be runnable from a simple Groovy script with a [Grab]<http://groovy.codehaus.org/Grapes+and+grab()> annotation (see examples below)
 - Must be runnable inside a WAR to be deployed in Google App Engine
 - Should have a plugin structure to add features from Gaelyk
 
@@ -31,6 +31,16 @@ References & Inspiration
 
 
 Examples
---------
+------------------------
 
 TBD
+
+
+TODO
+------------------------
+
+1. Upgrade to Groovy 1.8
+1. Plugin Structure
+1. Create Maven repo on Github
+1. Move server to a separate package
+1. Templating?
