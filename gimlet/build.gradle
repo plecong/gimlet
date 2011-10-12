@@ -17,7 +17,6 @@ uploadArchives {
         	groupId 'com.gimlet'
         	artifactId 'gimlet'
         	version '0.1'
-
         }
     }
 }
