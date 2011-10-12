@@ -1,0 +1,23 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    groovy group: 'org.codehaus.groovy', name: 'groovy', version: '1.7.10'
+    compile group: 'org.mortbay.jetty', name: 'jetty-embedded', version: '6.1.26'
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: "file://localhost/tmp/myRepo/")
+        pom.project {
+        	groupId 'com.gimlet'
+        	artifactId 'gimlet'
+        	version '0.1'
+
+        }
+    }
+}
